@@ -163,12 +163,23 @@
                 Agendar Avaliação
             </a>
             <!-- Mobile Menu Toggler -->
-            <button
+            <button id="mobile-btn"
                 class="md:hidden text-primary p-2 cursor-pointer border-none bg-transparent hover:text-cta transition-colors">
                 <svg width="24" height="24" fill="none" class="stroke-current">
                     <path d="M4 6h16M4 12h16M4 18h16" stroke-width="1.5" stroke-linecap="round" />
                 </svg>
             </button>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#fafaf9] border-t border-primary/10 absolute w-full left-0 top-full flex-col px-6 py-6 space-y-6 shadow-glass uppercase tracking-wide">
+            <a href="#experiencia" class="text-sm font-semibold text-secondary hover:text-cta transition-colors block border-b border-primary/10 pb-4">A Empresa</a>
+            <a href="#servicos" class="text-sm font-semibold text-secondary hover:text-cta transition-colors block border-b border-primary/10 pb-4">Especializações</a>
+            <a href="#contato" class="text-sm font-semibold text-secondary hover:text-cta transition-colors block border-b border-primary/10 pb-4">Contate-nos</a>
+            <a href="https://wa.me/5561999491092" target="_blank" class="bg-[#25D366] text-white px-6 py-4 rounded-sm text-xs tracking-wider uppercase font-bold hover:bg-[#128C7E] transition-colors duration-300 text-center flex items-center justify-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.878-.788-1.47-1.761-1.643-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.015 20.082h-.004c-1.6 0-3.167-.43-4.542-1.242l-.326-.193-3.377.886.902-3.29-.212-.338A7.85 7.85 0 014.15 11.94c0-4.346 3.535-7.882 7.876-7.882a7.834 7.834 0 015.567 2.312 7.83 7.83 0 012.308 5.565c-.001 4.348-3.538 7.884-7.886 7.884zm6.183-14.07A9.878 9.878 0 0012.01 3C6.556 3 2.112 7.443 2.11 12.898c0 1.745.456 3.45 1.325 4.945l-1.878 6.848 7.005-1.838a9.886 9.886 0 003.444.622h.005c5.456 0 9.901-4.444 9.903-9.897a9.866 9.866 0 00-2.883-7.001z"/></svg>
+                Agendar Pelo WhatsApp
+            </a>
         </div>
     </nav>
 
@@ -204,14 +215,21 @@
                     <img src="assets/images/logo_samsung.png" alt="Samsung Authorized Service"
                         class="h-16 md:h-24 w-auto drop-shadow-md">
                 </div>
-                <div class="flex flex-col sm:flex-row gap-4 animate-fade-up delay-3">
+                <div class="flex flex-col sm:flex-row flex-wrap gap-4 animate-fade-up delay-3">
                     <a href="#servicos"
-                        class="bg-primary text-background px-8 py-4 rounded-sm text-center text-sm font-medium tracking-wider uppercase hover:bg-secondary transition-colors duration-300">
+                        class="bg-primary text-background px-8 py-4 rounded-sm text-center text-sm font-medium tracking-wider uppercase hover:bg-secondary transition-colors duration-300 flex-1 sm:flex-none">
                         Nossos Serviços
                     </a>
                     <a href="#contato"
-                        class="border border-primary/20 text-primary px-8 py-4 rounded-sm text-center text-sm font-medium tracking-wider uppercase hover:bg-primary/5 transition-colors duration-300">
+                        class="border border-primary/20 text-primary px-8 py-4 rounded-sm text-center text-sm font-medium tracking-wider uppercase hover:bg-primary/5 transition-colors duration-300 flex-1 sm:flex-none">
                         Onde nos Localizar
+                    </a>
+                    <a href="https://wa.me/5561999491092" target="_blank"
+                        class="bg-[#25D366] text-white px-8 py-4 rounded-sm text-sm tracking-wider uppercase font-medium hover:bg-[#128C7E] transition-colors duration-300 sm:w-auto text-center inline-flex justify-center items-center gap-2 shadow-lg shadow-[#25D366]/30 flex-1 sm:flex-none">
+                        <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.878-.788-1.47-1.761-1.643-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.015 20.082h-.004c-1.6 0-3.167-.43-4.542-1.242l-.326-.193-3.377.886.902-3.29-.212-.338A7.85 7.85 0 014.15 11.94c0-4.346 3.535-7.882 7.876-7.882a7.834 7.834 0 015.567 2.312 7.83 7.83 0 012.308 5.565c-.001 4.348-3.538 7.884-7.886 7.884zm6.183-14.07A9.878 9.878 0 0012.01 3C6.556 3 2.112 7.443 2.11 12.898c0 1.745.456 3.45 1.325 4.945l-1.878 6.848 7.005-1.838a9.886 9.886 0 003.444.622h.005c5.456 0 9.901-4.444 9.903-9.897a9.866 9.866 0 00-2.883-7.001z"/>
+                        </svg>
+                        Converse Conosco
                     </a>
                 </div>
             </div>
@@ -579,8 +597,9 @@
         </div>
     </footer>
 
-    <!-- Small Scroll Logic -->
+    <!-- Component Logic -->
     <script>
+        // Scroll Logic
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
             if (window.scrollY > 20) {
@@ -590,6 +609,23 @@
                 nav.classList.remove('shadow-glass');
                 nav.style.backgroundColor = 'rgba(250, 250, 249, 0.8)';
             }
+        });
+
+        // Mobile Menu Logic
+        const mobileBtn = document.getElementById('mobile-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+
+        // Close menu on link click to prevent layout blocking
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+            });
         });
     </script>
 </body>
